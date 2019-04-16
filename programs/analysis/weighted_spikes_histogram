@@ -1,0 +1,56 @@
+import pandas as pd
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+from pandas.plotting import autocorrelation_plot
+from scipy.optimize import leastsq
+import os; os.chdir('/northbend')
+from libraries.oanda           import get_candles
+from classes.channel           import Channel
+from libraries.outcomes        import outcomes
+from libraries.transformations import pips_walk
+from libraries.stats           import autocorrelation
+from sklearn.preprocessing     import MinMaxScaler
+
+'''
+Next:
+    Sober up and summarize whayt I'm doing / where I am.
+    Plot best results - make sure grouping makes sense.
+    Make sure computing outcomes correctly
+    Compare outcomes with channel width.  Anything?
+
+
+Need to compre with channel width ? ? ? ? 
+This is all - I am all on done after this.
+
+
+did not collect largest spike timing anywhere on channel.
+Rha;ts oo bad but wewre going without today.
+
+Am I computing returns correctly.
+Maybe not - cause I NEED to assume I can only buy so many at once.
+So a ratio of 10:5 might be no different (except for spreads) than 2:1.
+Need to investigate this and think it thorough when I asm sober.
+
+
+
+Wednesday:
+    
+    Run program for 4 years( will ake a bunch of hours)
+
+
+'''
+
+
+
+# Get Candles if required
+###########################################################################
+if False:
+    # Candle Parameters
+    instrument = 'EUR_USD'
+    granularity = 'M1'
+    _from = '2017-01-01T00:00:00Z'
+    _to = '2018-01-01T00:00:00Z'
+    # Get Candles
+    candles = get_candles(instrument, granularity, _from, _to)
+

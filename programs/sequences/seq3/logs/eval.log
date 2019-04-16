@@ -1,0 +1,22 @@
+
+Starting seq/seq3.
+
+	2018-06-13 07:52:15	New Candle Found.	2018-06-13 14:30:00	
+< < < 
+	2018-06-13 07:52:15	Granularity check not passed: AUD_CAD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_AUD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: AUD_USD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_CHF, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_GBP, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: GBP_CHF, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: GBP_USD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: NZD_USD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: USD_CAD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: USD_CHF, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_NZD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_SGD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_CAD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: USD_SGD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: GBP_AUD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: EUR_USD, M30	2018-06-13 14:30:00
+	2018-06-13 07:52:15	Granularity check not passed: GBP_NZD, M30	2018-06-13 14:30:00

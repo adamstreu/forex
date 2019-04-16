@@ -1,0 +1,460 @@
+for each currency:
+    g1:  250, 500, 1000
+    g5:  250
+    g15: 125
+
+
+reminder: 
+             precision    recall  f1-score   support
+
+          0       0.79      1.00      0.88    110393
+          1       0.71      0.00      0.00     29098
+
+avg / total       0.77      0.79      0.70    139491
+
+
+----------------------------------------------------
+
+
+
+new method:
+    eurusd top:
+        M5, w = 200
+            c = [u1, d6]
+            f = [1.616, 1.717]
+            wins = .479
+            ex = 2.33
+            hours = 10
+            groups per year = 84
+            years analyszed = 2
+            yearly total = 200
+            through = .01823
+        M1, w = 250
+            c = [u1, d6]
+            f = [1.919, 2.02]
+            wins = .5028
+            ex = 2.52
+            hours = 2.75
+            groups per year = 44
+            yearly total = 111
+            through = .01556
+        M1, w = 500
+            nothing outstanding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+g1, w1000 ( run on outcomes = 10)
+EURUSD
+    --- Top Breakouts--- 
+    Target:    t10
+    Loss:      l1
+    Filter:    1.6313131313131313
+    Win %:     0.3649289099526066
+    Ex. value: 3.014218009478672
+    Total:     635.9999999999998
+    Bars:      380
+    Breakouts: 211
+    
+    --- Bottom Breakouts--- 
+    Target:    t10
+    Loss:      l1
+    Filter:    -0.4545454545454546
+    Win %:     0.19931271477663232
+    Ex. value: 1.1924398625429553
+    Total:     347.0
+    Bars:      380
+    Breakouts: 291
+    
+    
+
+
+
+
+
+
+
+
+-----------G1, W=500, YEARS ANALYS2, GROUPS=YES
+
+
+
+
+
+
+
+
+EUR_USD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.3131313131313131
+Win %:     0.2188065099457505
+Ex. value: 3.59493670886076
+Total:     1988.0000000000002
+Bars:      347
+Breakouts: 553
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.31313131313131315
+Win %:     0.21649484536082475
+Ex. value: 3.5463917525773203
+Total:     2064.0000000000005
+Bars:      347
+Breakouts: 582
+
+
+EUR_AUD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.4191919191919191
+Win %:     0.340632603406326
+Ex. value: 6.153284671532846
+Total:     2529.0
+Bars:      408
+Breakouts: 411
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.3838383838383841
+Win %:     0.2356828193832599
+Ex. value: 3.9493392070484576
+Total:     1792.9999999999998
+Bars:      408
+Breakouts: 454
+
+
+
+AUD_CAD
+--- Top Breakouts--- 
+Target:    t18
+Loss:      l1
+Filter:    1.1363636363636362
+Win %:     0.2615933412604043
+Ex. value: 3.9702734839476816
+Total:     3339.0000000000005
+Bars:      676
+Breakouts: 841
+
+--- Bottom Breakouts--- 
+Target:    t19
+Loss:      l1
+Filter:    -0.06565656565656575
+Win %:     0.21675392670157068
+Ex. value: 3.3350785340314135
+Total:     3185.0
+Bars:      687
+Breakouts: 955
+
+
+
+EUR_CHF
+--- Top Breakouts--- 
+Target:    t18
+Loss:      l1
+Filter:    1.0656565656565657
+Win %:     0.28935185185185186
+Ex. value: 4.497685185185186
+Total:     3886.000000000001
+Bars:      925
+Breakouts: 864
+
+--- Bottom Breakouts--- 
+Target:    t17
+Loss:      l1
+Filter:    -0.06565656565656575
+Win %:     0.32681242807825084
+Ex. value: 4.882623705408514
+Total:     4242.999999999999
+Bars:      908
+Breakouts: 869
+
+
+EUR_GBP
+--- Top Breakouts--- 
+Target:    t19
+Loss:      l1
+Filter:    1.0656565656565657
+Win %:     0.23093922651933704
+Ex. value: 3.6187845303867405
+Total:     3275.0
+Bars:      481
+Breakouts: 905
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.10101010101010122
+Win %:     0.24023668639053256
+Ex. value: 4.044970414201184
+Total:     3418.0000000000005
+Bars:      490
+Breakouts: 845
+
+
+GBP_CHF
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.0656565656565657
+Win %:     0.3035714285714285
+Ex. value: 5.374999999999998
+Total:     4815.999999999998
+Bars:      800
+Breakouts: 896
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.06565656565656575
+Win %:     0.2721518987341772
+Ex. value: 4.715189873417722
+Total:     4470.0
+Bars:      800
+Breakouts: 948
+
+
+GBP_USD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.1363636363636362
+Win %:     0.1951530612244898
+Ex. value: 3.098214285714286
+Total:     2429.0000000000005
+Bars:      393
+Breakouts: 784
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.24242424242424265
+Win %:     0.2011747430249633
+Ex. value: 3.2246696035242293
+Total:     2196.0
+Bars:      393
+Breakouts: 681
+
+
+NZD_USD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.0656565656565657
+Win %:     0.14300960512273211
+Ex. value: 2.0032017075773743
+Total:     1876.9999999999998
+Bars:      403
+Breakouts: 937
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.10101010101010122
+Win %:     0.16912599318955732
+Ex. value: 2.551645856980704
+Total:     2248.0
+Bars:      403
+Breakouts: 881
+
+
+USD_CAD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.4191919191919191
+Win %:     0.3333333333333333
+Ex. value: 5.999999999999999
+Total:     2663.9999999999995
+Bars:      410
+Breakouts: 444
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.1363636363636367
+Win %:     0.1608643457382953
+Ex. value: 2.3781512605042017
+Total:     1981.0
+Bars:      410
+Breakouts: 833
+
+
+USD_CHF
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.101010101010101
+Win %:     0.18894601542416453
+Ex. value: 2.9678663239074554
+Total:     2309.0000000000005
+Bars:      466
+Breakouts: 778
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.2777777777777777
+Win %:     0.19738988580750408
+Ex. value: 3.1451876019575855
+Total:     1928.0
+Bars:      466
+Breakouts: 613
+
+
+EUR_NZD
+--- Top Breakouts--- 
+Target:    t19
+Loss:      l1
+Filter:    1.0303030303030303
+Win %:     0.2169260700389105
+Ex. value: 3.3385214007782107
+Total:     3432.0000000000005
+Bars:      662
+Breakouts: 1028
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.06565656565656575
+Win %:     0.18041237113402064
+Ex. value: 2.7886597938144337
+Total:     2705.000000000001
+Bars:      670
+Breakouts: 970
+
+
+EUR_SGD
+--- Top Breakouts--- 
+Target:    t12
+Loss:      l1
+Filter:    1.0303030303030303
+Win %:     0.4269005847953216
+Ex. value: 4.549707602339181
+Total:     4668.0
+Bars:      1274
+Breakouts: 1026
+
+--- Bottom Breakouts--- 
+Target:    t13
+Loss:      l1
+Filter:    0.00505050505050475
+Win %:     0.3935230618253189
+Ex. value: 4.509322865554465
+Total:     4594.999999999999
+Bars:      1310
+Breakouts: 1019
+
+
+EUR_CAD
+--- Top Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    1.0303030303030303
+Win %:     0.21084337349397592
+Ex. value: 3.427710843373494
+Total:     3414.0
+Bars:      564
+Breakouts: 996
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.1363636363636367
+Win %:     0.26487747957993
+Ex. value: 4.56242707117853
+Total:     3910.0000000000005
+Bars:      564
+Breakouts: 857
+
+
+USD_SGD
+--- Top Breakouts--- 
+Target:    t15
+Loss:      l1
+Filter:    1.0303030303030303
+Win %:     0.3070088845014807
+Ex. value: 3.9121421520236916
+Total:     3962.9999999999995
+Bars:      885
+Breakouts: 1013
+
+--- Bottom Breakouts--- 
+Target:    t15
+Loss:      l1
+Filter:    -0.10101010101010122
+Win %:     0.29605963791267303
+Ex. value: 3.736954206602768
+Total:     3508.999999999999
+Bars:      885
+Breakouts: 939
+
+
+GBP_AUD
+--- Top Breakouts--- 
+Target:    t17
+Loss:      l1
+Filter:    1.0656565656565657
+Win %:     0.2281603288797533
+Ex. value: 3.106885919835559
+Total:     3022.9999999999986
+Bars:      521
+Breakouts: 973
+
+--- Bottom Breakouts--- 
+Target:    t20
+Loss:      l1
+Filter:    -0.10101010101010122
+Win %:     0.1819148936170213
+Ex. value: 2.820212765957447
+Total:     2651.0
+Bars:      546
+Breakouts: 940
+
+
+AUD_USD
+--- Top Breakouts--- 
+Target:    t19
+Loss:      l1
+Filter:    1.4545454545454546
+Win %:     0.3205128205128205
+Ex. value: 5.41025641025641
+Total:     1687.9999999999998
+Bars:      311
+Breakouts: 312
+
+--- Bottom Breakouts--- 
+Target:    t18
+Loss:      l1
+Filter:    -0.10101010101010122
+Win %:     0.12408759124087593
+Ex. value: 1.3576642335766425
+Total:     1116.0
+Bars:      306
+Breakouts: 822
