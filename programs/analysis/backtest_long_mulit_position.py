@@ -47,7 +47,7 @@ return_filter = 0
 
 
 def get_candles(instrument, granularity, _from, _to, da=daily_alignment):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'from': _from,
               'to': _to,

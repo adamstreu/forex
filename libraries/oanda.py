@@ -19,7 +19,7 @@ daily_alignment = 0
 
 def get_candles(instrument, granularity, _from, _to, da=daily_alignment):
     #print('Fetching Candles.')
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'from': _from,
               'to': _to,
@@ -87,7 +87,7 @@ def get_candles(instrument, granularity, _from, _to, da=daily_alignment):
 
 
 def get_candles_by_count(instrument, granularity, count, da = daily_alignment):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'count': count,
               'granularity': granularity,
@@ -140,7 +140,7 @@ def get_candles_by_count(instrument, granularity, count, da = daily_alignment):
 
 
 def get_multiple_candles_midclose(instrument_list, granularity):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'count': 2,
               'granularity': granularity,
@@ -159,7 +159,7 @@ def get_multiple_candles_midclose(instrument_list, granularity):
 
 
 def get_multiple_candles_volume(instrument_list, granularity):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'count': 2,
               'granularity': granularity,
@@ -179,7 +179,7 @@ def get_multiple_candles_volume(instrument_list, granularity):
 
 
 def get_multiple_candles_spread(instrument_list, granularity):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'count': 2,
               'granularity': granularity,
@@ -199,7 +199,7 @@ def get_multiple_candles_spread(instrument_list, granularity):
 
 
 def get_spreads():
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {
               "instrument": "EUR_USD",
@@ -211,7 +211,7 @@ def get_spreads():
     
 
 def get_time(granularity):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'count': 2,
               'granularity': granularity,
@@ -228,7 +228,7 @@ def get_time(granularity):
 
 
 def get_orderbook(instrument, time):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {'time': time, 'Accept-Datetime-Format': 'RFC3339'}
     r = instruments.InstrumentsOrderBook(instrument=instrument,
@@ -239,7 +239,7 @@ def get_orderbook(instrument, time):
  
 
 def create_order(instrument, direction):#, quantity, target, stop, account):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     account_id = '101-001-7518331-001'
     client = oandapyV20.API(access_token=client)
     if direction.lower() == 'long':
@@ -286,7 +286,7 @@ def create_order(instrument, direction):#, quantity, target, stop, account):
 
 
 def close_position(instrument):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     account_id = '101-001-7518331-001'
     client = oandapyV20.API(access_token=client)
     data =  {
@@ -309,7 +309,7 @@ def price_stream(currency_pairs):
         return
     # Main Body
     account='101-001-7518331-001'
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     api = oandapyV20.API(access_token=client)
     params ={'instruments': 'EUR_USD, EUR_JPY'}
     params ={'instruments': currency_pairs}
@@ -327,7 +327,7 @@ def price_stream(currency_pairs):
 
 
 def get_open_positions(account):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     r = positions.OpenPositions(accountID=account)
     client.request(r)
@@ -339,7 +339,7 @@ def get_open_positions(account):
 
 
 def get_transactions_range(_from, account):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     params = {"from": _from,
           "to": _from + 500,
@@ -350,7 +350,7 @@ def get_transactions_range(_from, account):
 
     
 def get_most_recent_transaction(account):
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     r = trades.OpenTrades(accountID=account)
     client.request(r)
@@ -359,7 +359,7 @@ def get_most_recent_transaction(account):
 
 
 def get_accounts():
-    client = 'f01b219340f61ffa887944e7673d85a5-6bcb8a840148b5c366e17285c984799e'
+    client = 'client=oandapyV20.API(access_token=env['client'])'
     client = oandapyV20.API(access_token=client)
     r = accounts.AccountList()
     client.request(r)
